@@ -6,7 +6,7 @@ import java.awt.event.ActionListener;
 public class View extends JFrame {
     private Parser parser;
     private JTextArea queryInput;
-    private JButton submit;
+    private JButton submitButton;
 
     public View(){
         super("Relational Algebra Query");
@@ -23,8 +23,8 @@ public class View extends JFrame {
         submitPanel.setLayout(new GridLayout(1,3));
         this.add(submitPanel, BorderLayout.SOUTH);
 
-        submit = new JButton("Submit Query");
-        submit.addActionListener(new ActionListener() {
+        submitButton = new JButton("Submit Query");
+        submitButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 String query = queryInput.getText();
@@ -32,10 +32,10 @@ public class View extends JFrame {
             }
         });
 
-        submit.setPreferredSize(new Dimension(50,40));
+        submitButton.setPreferredSize(new Dimension(50,40));
 
         submitPanel.add(new JPanel());
-        submitPanel.add(submit);
+        submitPanel.add(submitButton);
         submitPanel.add(new JPanel());
 
 
