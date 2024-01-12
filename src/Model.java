@@ -6,7 +6,8 @@ public class Model {
         output = view;
     }
 
-    public void submitQuery(){
+    public void submitQuery(String rawText){
+        this.rawText = rawText;
 
     }
 }
