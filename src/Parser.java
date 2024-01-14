@@ -1,6 +1,9 @@
+
 public class Parser {
 
-    public static Relation processText(String rawText) {
-
+    public static QueryResponse processText(String rawText) {
+        QueryResponse response = new QueryResponse();
+        
+        return response;
     }
 }
